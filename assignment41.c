@@ -1,15 +1,19 @@
-// program to find factor of any
+// READ A NUMBER N AND PRINT FACTOR OF N
 #include<stdio.h>
-int main ()
+int main()
 {
-int a,b,i;
-printf("enter the number");
-scanf("%d",&a);
-for(i=1;i<=a;i++)
-{
-b=a%i;
-if(b==0)
-printf("\n%d",i);
-}
+    int num,a,i;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    for(i=1;i<=num;i++)
+    {
+       if(num%i==0) 
+       {
+        printf("%d \n",i);
+       }
+        
+    }
+
 return 0;
+
 }

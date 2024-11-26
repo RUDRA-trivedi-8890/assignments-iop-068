@@ -1,18 +1,29 @@
-//prograam to print amount paid by consumer
+//program for electricity distribution company for domestic customers
 #include<stdio.h>
 int main()
 {
-    float unit,charg;
-    printf("enter your consuption in unit");
-    scanf("%f",&unit);
-    if(unit<=200 && unit>=0)
-        printf("charge is %f rs",unit*0.5);
-    else if(unit<=400 && unit>=210)
-    printf("charge is %f rs",(((unit-200))*0.65)+100);
-    else if(unit<=600  && unit>=400)
-    printf("charge is %f rs",(((unit-400))*0.80)+230);
-     else
-     printf("charge is %f",(((unit-600)*125))+425);
-    return 0;
-}
+    int unit,total;
+    printf("Enter units consumed by the customer:");
+    scanf("%d",&unit);
+    if(unit>0&&unit<=200)
+        {
+            printf("Amount to be paid by customer is RS.%d",total=unit*0.50);
+        }
+    else if(unit>201&&unit<=400) 
+        {
+           printf("Amount to be paid by customer is RS.%d",total=100+(unit*0.65));
+        }
+    else if(unit>401&&unit<=600)
+        {
+            printf("Amount to be paid by customer is RS.%d",total=230+(unit*0.80));
+        } 
+    else if (unit>600)
+        {
+           printf("Amount to be paid by customer is RS.%d",total=425+(unit*1.25));
+        } 
+    else 
+    {
+        printf("wrong input");
+    }    
 
+}

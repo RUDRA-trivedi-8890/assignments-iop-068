@@ -1,27 +1,26 @@
-// program to calculate commision
+//calculating commission of sales representative as per sales
+#include<stdio.h>
+int main()
+{
+  float sale,total;
+  printf("Enter sale amount:");
+  scanf("%f",&sale);
 
-#include <stdio.h>
-
-int main() {
-    float sales, commission;
-
-    printf("Enter the number of sales: ");
-    scanf("%f", &sales);
-
-    if (sales <= 500) {
-        commission = sales / 20;
-    } 
-    else if (sales > 500 && sales <= 2000) {
-        commission = (sales / 10) + 10;
-    } 
-    else if (sales > 2000 && sales <= 5000) {
-        commission = (sales * 0.12) + 185;
-    } 
-    else {
-        commission = sales * 0.125;
-    }
-
-    printf("Commission is %.2f\n", commission);
-    
-    return 0;
+  if (sale<=500)
+     { 
+        printf("Your commission is Rs.%f",total=sale*5/100);
+     }
+  else if(sale>500&&sale<=2000)
+     {
+        printf("Your commission is Rs.%f",total=35+sale*10/100);
+     }   
+  else if(sale>2000&&sale<=5000)  
+     {
+        printf("Your commission is Rs.%f",total=185+sale*12/100);
+     } 
+  else if (sale>5000)  
+     {
+        printf("Your commission is Rs.%f",total=sale*12.5/100);
+     } 
+     return 0;
 }
